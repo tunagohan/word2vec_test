@@ -1,0 +1,11 @@
+version: '3'
+services:
+  app:
+    container_name: word2vec
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    volumes:
+      - ./app:/app
+    stdin_open: true
+    tty: true
